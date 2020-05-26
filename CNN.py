@@ -53,3 +53,4 @@ with open('acc_file.txt','w') as f:
 #new test
 
 #today is best day
+#tty test
