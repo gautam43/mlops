@@ -58,3 +58,4 @@ with open('acc_file.txt','w') as f:
 #no file exist
 #accuracy
 #final test
+#final 1
