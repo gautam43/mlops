@@ -36,7 +36,7 @@ test_set = test_datagen.flow_from_directory(
 history=model.fit(
         training_set,
         steps_per_epoch=20,
-        epochs=3,
+        epochs=1,
         validation_data=test_set,
         validation_steps=800)
 model.save('mymodel.h5')
@@ -64,3 +64,4 @@ with open('acc_file.txt','w') as f:
 #new 
 #mlops
 #check
+#new update
