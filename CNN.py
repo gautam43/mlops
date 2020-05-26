@@ -56,3 +56,4 @@ with open('acc_file.txt','w') as f:
 #tty test
 #start test
 #no file exist
+#accuracy
