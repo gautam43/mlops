@@ -41,7 +41,7 @@ history=model.fit(
         validation_steps=800)
 model.save('mymodel.h5')
 from keras.preprocessing import image
-test_image = image.load_img('cnn_dataset/single_prediction/cat_or_dog_2.jpg',target_size=(64,64))
+test_image = image.load_img('/dataset/cnn_dataset/single_prediction/cat_or_dog_2.jpg',target_size=(64,64))
 test_image = image.img_to_array(test_image)
 import numpy as np 
 test_image = np.expand_dims(test_image, axis=0)
