@@ -59,3 +59,4 @@ with open('acc_file.txt','w') as f:
 #accuracy
 #final test
 #final 1
+#check
