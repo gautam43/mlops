@@ -66,3 +66,4 @@ with open('acc_file.txt','w') as f:
 #check
 #new update
 #helo
+#avc
