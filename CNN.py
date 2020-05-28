@@ -65,5 +65,11 @@ with open('acc_file.txt','w') as f:
 #mlops
 #check
 #new update
+<<<<<<< HEAD
+#docker
+#update github
+#ds
+=======
 #helo
 #avc
+>>>>>>> cfeec5cde3b18bceaa0af9935a48b83a94ecca99
