@@ -49,26 +49,3 @@ result = model.predict(test_image)
 accuracy=model.evaluate_generator(test_set)
 with open('acc_file.txt','w') as f:
     f.write(str(accuracy[1]))
-
-#new test
-
-#today is best day
-#tty test
-#start test
-#no file exist
-#accuracy
-#final test
-#final 1
-#check
-#hello
-#new 
-#mlops
-#check
-#new update
-#docker
-#update github
-#ds
-#helo
-#avc
-#comment
-#red
