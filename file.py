@@ -35,7 +35,7 @@ test_set = test_datagen.flow_from_directory(
         class_mode='binary')
 history=model.fit(
         training_set,
-        steps_per_epoch=20,
+        steps_per_epoch=30,
         epochs=1,
         validation_data=test_set,
         validation_steps=800)
