@@ -49,3 +49,4 @@ result = model.predict(test_image)
 accuracy=model.evaluate_generator(test_set)
 with open('acc_file.txt','w') as f:
     f.write(str(accuracy[1]))
+#test"
