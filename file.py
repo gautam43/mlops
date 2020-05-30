@@ -35,7 +35,7 @@ test_set = test_datagen.flow_from_directory(
         class_mode='binary')
 history=model.fit(
         training_set,
-        steps_per_epoch=5,
+        steps_per_epoch=4,
         epochs=1,
         validation_data=test_set,
         validation_steps=800)
@@ -49,4 +49,4 @@ result = model.predict(test_image)
 accuracy=model.evaluate_generator(test_set)
 with open('acc_file.txt','w') as f:
     f.write(str(accuracy[1]))
-#test"
+
