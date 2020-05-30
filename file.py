@@ -6,21 +6,6 @@ from keras.models import Sequential
 model = Sequential()
 model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_shape=(64, 64, 3)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-
-model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_shape=(64, 64, 3)))
-
-model.add(MaxPooling2D(pool_size=(2, 2)))
-
-
-model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_shape=(64, 64, 3)))
-
-model.add(MaxPooling2D(pool_size=(2, 2)))
-
-
-model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_shape=(64, 64, 3)))
-
-model.add(MaxPooling2D(pool_size=(2, 2)))
-
 model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_shape=(64, 64, 3)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.summary()
@@ -50,10 +35,10 @@ test_set = test_datagen.flow_from_directory(
         class_mode='binary')
 history=model.fit(
         training_set,
-        steps_per_epoch=500,
+        steps_per_epoch=8000,
         epochs=1,
         validation_data=test_set,
-        validation_steps=800)
+        validation_steps=2000)
 model.save('mymodel.h5')
 from keras.preprocessing import image
 test_image = image.load_img('/dataset/cnn_dataset/single_prediction/cat_or_dog_2.jpg',target_size=(64,64))
